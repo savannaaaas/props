@@ -26,6 +26,7 @@ function App() {
       <Typography variant="h2" align="center" style={{ padding: "5px" }}>
         Profile person
       </Typography>
+
       <Grid container direction="row">
         <Person1
           name={"Anna"}
@@ -35,47 +36,40 @@ function App() {
           sayHello={sayHello}
           hobbies={hobbies}
         />
-      </Grid>
-      <Grid container direction="row">
         <Person2
-          name={"Angel"}
+          name={"Ilya"}
           age={34}
-          men={false}
-          obj={obj}
-          sayHello={sayHello}
-          hobbies={hobbies}
-        />
-      </Grid>
-      <Grid container direction="row">
-        <Person3
-          name={"Nasta"}
-          age={51}
-          men={false}
-          obj={obj}
-          sayHello={sayHello}
-          hobbies={hobbies}
-        />
-      </Grid>
-      <Grid container direction="row">
-        <Person4
-          name={"Kirill"}
-          age={25}
           men={true}
           obj={obj}
           sayHello={sayHello}
           hobbies={hobbies}
         />
       </Grid>
-      <Grid container direction="row">
-        <Person5
-          name={"Kristina"}
-          age={21}
-          men={false}
-          obj={obj}
-          sayHello={sayHello}
-          hobbies={hobbies}
-        />
-      </Grid>
+
+      <Person3
+        name={"Nasta"}
+        age={51}
+        men={false}
+        obj={obj}
+        sayHello={sayHello}
+        hobbies={hobbies}
+      />
+      <Person4
+        name={"Kirill"}
+        age={25}
+        men={true}
+        obj={obj}
+        sayHello={sayHello}
+        hobbies={hobbies}
+      />
+      <Person5
+        name={"Kristina"}
+        age={21}
+        men={false}
+        obj={obj}
+        sayHello={sayHello}
+        hobbies={hobbies}
+      />
     </>
   );
 }

@@ -26,6 +26,7 @@ function App() {
       <Typography variant="h2" align="center" style={{ padding: "5px" }}>
         Profile person
       </Typography>
+
       <Grid container direction="row">
         <Person1
           name={"Anna"}

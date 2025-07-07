@@ -22,11 +22,18 @@ function App() {
   const sayHello = (name) => ` Hello, ${name}`;
   const hobbies = ["swim", "sing", "play vollleyball", "play basketball"];
   return (
-    <>
+    <Box
+      sx={{
+        width: 500,
+        height: 500,
+        borderRadius: 1,
+        bgcolor: "pink",
+      }}
+    >
       <Typography variant="h2" align="center" style={{ padding: "5px" }}>
         Profile person
       </Typography>
-      <Grid container direction="row">
+      <Grid container direction="column">
         <Person1
           name={"Anna"}
           age={5}
@@ -35,18 +42,14 @@ function App() {
           sayHello={sayHello}
           hobbies={hobbies}
         />
-      </Grid>
-      <Grid container direction="row">
         <Person2
-          name={"Angel"}
+          name={"Ilya"}
           age={34}
-          men={false}
+          men={true}
           obj={obj}
           sayHello={sayHello}
           hobbies={hobbies}
         />
-      </Grid>
-      <Grid container direction="row">
         <Person3
           name={"Nasta"}
           age={51}
@@ -55,8 +58,6 @@ function App() {
           sayHello={sayHello}
           hobbies={hobbies}
         />
-      </Grid>
-      <Grid container direction="row">
         <Person4
           name={"Kirill"}
           age={25}
@@ -65,8 +66,6 @@ function App() {
           sayHello={sayHello}
           hobbies={hobbies}
         />
-      </Grid>
-      <Grid container direction="row">
         <Person5
           name={"Kristina"}
           age={21}
@@ -76,7 +75,7 @@ function App() {
           hobbies={hobbies}
         />
       </Grid>
-    </>
+    </Box>
   );
 }
 

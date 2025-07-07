@@ -26,6 +26,7 @@ function App() {
       <Typography variant="h2" align="center" style={{ padding: "5px" }}>
         Profile person
       </Typography>
+
       <Grid container direction="row">
         <Person1
           name={"Anna"}
@@ -66,16 +67,15 @@ function App() {
           hobbies={hobbies}
         />
       </Grid>
-      <Grid container direction="row">
-        <Person5
-          name={"Kristina"}
-          age={21}
-          men={false}
-          obj={obj}
-          sayHello={sayHello}
-          hobbies={hobbies}
-        />
-      </Grid>
+
+      <Person5
+        name={"Kristina"}
+        age={21}
+        men={false}
+        obj={obj}
+        sayHello={sayHello}
+        hobbies={hobbies}
+      />
     </>
   );
 }
